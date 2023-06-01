@@ -1,0 +1,56 @@
+<div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    <h1>Student Details</h1>
+
+    
+
+
+
+    <table class="table">
+        <thead>
+            <th>Id</th>
+                <th>Name</th>
+                <th>Degree</th>
+
+                <th><select [ngModel]="selectedOption" (ngModelChange)="selectedOption = $event">
+
+                    <option value="" disabled selected>Select an option</option>
+                    <option value="BE">BE</option>
+                    <option value="MBBS">MBBS</option>
+
+                    <option value="BHMS">BHMS</option>
+                    <!-- <option value="Master's">Master's</option> -->
+                    
+                </select></th>
+        </thead>
+        <tbody *ngFor="let e of employees"> 
+            <tr *ngIf="e.specialization==selectedOption">
+                 <td >{{e.sid}}</td> 
+                 <td> {{e.sname}}</td> 
+                 <td>{{e.specialization}}</td>
+            </tr>
+        </tbody>
+
+    </table>
+
+    <ul *ngFor="let e of employees">
+
+        <li *ngIf="e.degree==selectedOption">{{e.sid}}  {{e.sname}}  {{e.specialization}}</li>
+
+    </ul>
+</div>

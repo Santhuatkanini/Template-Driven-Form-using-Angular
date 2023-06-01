@@ -1,0 +1,16 @@
+[
+    {
+        "id": 1,
+        "name": "John Doe", 
+        "degree": "Bachelor's" 
+    },
+
+    { "id": 2, "name": "Jane Smith", "degree": "Master's" },
+    { "id": 3, "name": "Mike Johnson", "degree": "Ph.D." },
+    { "id": 4, "name": "Emily Williams", "degree": "Bachelor's"},
+    { "id": 5, "name": "John ", "degree": "Bachelor's" },
+    { "id": 6, "name": " Smith", "degree": "Master's" },
+    { "id": 7, "name": "Mike", "degree": "Ph.D." },
+    { "id": 8, "name": "Williams", "degree": "Bachelor's" }
+
+]
